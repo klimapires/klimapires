@@ -3,18 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kleber Lima</title>
+    <title>Meu Portfólio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <nav id="navbar">
         <div class="container">
-            <h1>Meu Portfólio</h1>
-            <p>Bem-vindo ao meu portfólio online. Aqui você pode conferir alguns dos meus projetos.</p>
+            <h1>Kleber Lima</h1>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </div>
-    </header>
+    </nav>
 
-    <section class="projects">
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Bem-vindo ao Meu Portfólio</h2>
+            <p>Confira meus projetos e habilidades.</p>
+            <a href="#projects" class="btn">Ver Projetos</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Eu sou um desenvolvedor apaixonado por criar soluções inovadoras e eficientes. Tenho experiência em diversas tecnologias e adoro aprender coisas novas.</p>
+            <div class="skills">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML & CSS</li>
+                    <li>Devops</li>
+                    <li>Análise de dados</li>
+                    <li>Git & GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
         <div class="container">
             <h2>Projetos Recentes</h2>
             <div class="project-grid">
@@ -46,10 +75,25 @@
         </div>
     </section>
 
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Se você quiser entrar em contato comigo, sinta-se à vontade para enviar uma mensagem.</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu Email" required>
+                <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+                <button type="submit" class="btn">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 klimapires. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
