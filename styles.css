@@ -62,7 +62,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: url('https://via.placeholder.com/1500') no-repeat center center/cover;
+    background: url('img/banner.jpg') no-repeat center center/cover;
     color: #ffffff;
     height: 100vh;
     display: flex;
