@@ -79,12 +79,21 @@
         <div class="container">
             <h2>Contato</h2>
             <p>Se você quiser entrar em contato comigo, sinta-se à vontade para enviar uma mensagem.</p>
-            <form action="https://formspree.io/f/mjkgerng}" method="POST">
-                <input type="text" name="name" placeholder="Kleber" required>
-                <input type="email" name="email" placeholder="kleber.lima@outlook.com" required>
-                <textarea name="message" placeholder="Obrigado por enviar uma mensagem, logo entrarei em contato!" required></textarea>
-                <button type="submit" class="btn">Enviar Mensagem</button>
-            </form>
+            <form
+            action="https://formspree.io/f/mjkgerng"
+            method="POST"
+            enctype="multipart/form-data"
+          >
+            <label>
+              Seu email:
+              <input type="email" name="email">
+            </label>
+            <label>
+              Envie um arquivo:
+              <input type="file" name="upload">
+            </label>
+            <button type="submit">Send</button>
+          </form>
         </div>
     </section>
 
